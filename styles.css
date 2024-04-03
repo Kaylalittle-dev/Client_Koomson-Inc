@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 32px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+section {
+    padding: 96px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 40px 32px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #ff66c4;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+button:hover {
+    background-color: #c663a0;
+}
+
+
+/* HEADER */
+
+
+.nav__list{
+    display: flex;
+}
+
+.nav__list-item {
+    font-weight: 600;
+    padding: 0 16px;
+}
+
+.btn--secondary {
+    background-color: transparent;
+    border: 1px solid #ff66c4;
+}
+
+.btn--secondary:hover {
+    background-color: #ff66c4;
+}
+
+#heading {
+    padding: 96px 0;
+    background-color: #ff66c42f;
+    /* background-image: url(assets/blogpost-pitfalls-when-switching-branc-models.png);
+    background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 -32px;
+}
+
+.heading-para {
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+
+.heading-btn {
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 20px 52px;
+}
+
+
+/* COMPANY STATS */
+
+
+#company-stats {
+    padding: 96px 0;
+}
+
+.company--stats_row {
+    box-shadow: 4px 4px 50px #c663a0;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company--stats_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    width: calc(100% / 4);
+}
+
+.stats-title {
+    font-size: 60px;
+    font-weight: 700
+}
+
+.stats-text {
+    font-size: 24px;
+}
+
+
+/* ABOUT */
+
+
+#about {
+    background-color: #ff66c42f;
+    margin: 0 -32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-heading {
+    margin-top: 24px
+}
+
+.about-para {
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: center;
+    max-width: 70%;
+}
+
+
+/* PAST PERFORMANCES */
+
+
+.pp-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pp__img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pp__img {
+    height: 200px;
+    width: 200px;
+}
+
+
+/* VISION */
+
+
+#vision {
+    background-color: #ff66c42f;
+    margin: 0 -32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vision-heading {
+    margin-top: 24px
+}
+
+.vision-para {
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: center;
+    max-width: 70%;
+}
+
+
+/* MISSION */
+
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission-para {
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: center;
+    max-width: 70%;
+}
+
+/* Core Comp */
+
+
+.cc--list-container {
+    border: 1px solid #ff66c4;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 4);
+    flex-wrap: wrap;
+    margin: 16px;
+    padding: 24px;
+}
+
+.cc-list {
+    font-size: 20px;
+}
+
+
+/* CONTACT */
+
+
+#contact-row {
+    box-shadow: 4px 4px 50px #c663a0;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+
+
+#footer {
+    background-color: #c663a0;
+    margin: 0 -32px -32px;
+    padding: 50px 0;
+}
+
+.footer__top-row {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list-item {
+    padding: 0 16px;
+}
+
+.footer__bottom-row {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
