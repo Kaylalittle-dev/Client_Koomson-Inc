@@ -35,7 +35,16 @@ a{
     transition: all 300ms ease;
 }
 
+a:active {
+    color: black;
+}
+
+a:after {
+    color: black;
+}
+
 a > nav:hover{
+    color:black
     text-decoration: underline;
 }
 
@@ -242,6 +251,10 @@ button:hover {
 /* Core Comp */
 
 
+#core-comp {
+    border-top: 3px solid #ff66c42f;
+}
+
 .cc-row {
     display: flex;
     flex-wrap: wrap;
@@ -271,6 +284,11 @@ button:hover {
 
 /* CONTACT */
 
+
+
+#contact {
+    border-top: 3px solid #ff66c42f;
+}
 
 .contact-row-top {
     display: flex;
@@ -333,6 +351,7 @@ button:hover {
 }
 
 .footer-list-item {
+    color: white;
     padding: 0 16px;
 }
 
@@ -342,3 +361,6 @@ button:hover {
     justify-content: center;
     padding-top: 25px;
 }
+
+MEDIA QUERIES
+Small Screens
