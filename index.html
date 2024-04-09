@@ -6,6 +6,7 @@
     <title>Koomson Inc.</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/0b5ae10d2b.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -34,6 +35,39 @@
                 <button class="btn--primary">
                     <a href="/contact.html" target="_blank">Contact Us</a>
                 </button>
+            </div>
+
+            <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                    </li>
+                    <div class="menu__list--btn>
+                        <li class="menu__link login">
+                            <a href="#">Login</a>
+                        </li>
+                        <li class="menu__link--primary">
+                            <a href="#">
+                                <button class="input__btn">Sign Up</button>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
             </div>
             
         </nav>
@@ -110,21 +144,26 @@
                 <div class="vision__content-container">
                     <h2 class="vision-heading">Our Vision</h2>
                     <p class="vision-para">Our vision is to help create a cyber-resilient future where individuals and organizations can thrive in a secure digital environment.
-
-
-                        
                     </p>
                 </div>
                 <div class="vision__img-container">
-                    <img src="assets/undraw_visionary_technology_re_jfp7.svg" alt="">
+                    <img src="assets/undraw_visionary_technology_re_jfp7.svg" class="vision-img" alt="">
                 </div>
             </div>
         </section>
 
 
         <section id="mission">
-            <h2 class="mission-heading">Our Mission</h2>
-            <p class="mission-para">Our mission is to shield the digital landscape by providing innovative and robust cybersecurity solutions while offering a curated selection of top-tier software solutions. We are dedicated to the empowerment of navigating the digital realm with confidence, ensuring the confidentiality, integrity, and availability of valuable data and assets.</p>
+            <div class="mission-row">
+                <div class="mission__img-container">
+                    <img src="assets/undraw_goals_re_lu76.svg" alt="" class="mission-img">
+                </div>
+                <div class="mission__content-container">
+                    <h2 class="mission-heading">Our Mission</h2>
+                    <p class="mission-para">Our mission is to shield the digital landscape by providing innovative and robust cybersecurity solutions while offering a curated selection of top-tier software solutions. We are dedicated to the empowerment of navigating the digital realm with confidence, ensuring the confidentiality, integrity, and availability of valuable data and assets.
+                    </p>
+                </div>
+            </div>
         </section>
 
 
@@ -178,26 +217,28 @@
             <div class="contact-row">
                 <div class="contact-row-top">
                     <h2 class="contact-heading">Contact Us</h2>
-                <button class="contact-btn">Email Us</button>
+                <a href="contact.html">
+                    <button class="contact-btn">Send An Email</button>
+                </a>
                 </div>
                 <div class="contact-row-bottom">
                     <div class="contact__icon-container">
                         <div class="contact_icon-circle">
                             <i class="fa-regular fa-envelope"></i>
                         </div>
-                        <p>Nstephens@koomson.co</p>
+                        <p class="contact-para">Nstephens@koomson.co</p>
                     </div>
                     <div class="contact__icon-container">
                         <div class="contact_icon-circle">
                             <i class="fa-solid fa-phone"></i>
                         </div>
-                        <p>+1(813)323-1954</p>
+                        <p class="contact-para">+1(813)323-1954</p>
                     </div>
                     <div class="contact__icon-container">
                         <div class="contact_icon-circle">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <p>Jacksonville, Florida</p>
+                        <p class="contact-para">Jacksonville, Florida</p>
                     </div>
                 </div>
             </div>
@@ -207,14 +248,35 @@
     <footer id="footer">
         <div class="footer__top-row">
             <ul class="footer-list">
-                <li class="footer-list-item"><a href="#about">About Us</a></li>
-                <li class="footer-list-item"><a href="#vision">Our Vision</a></li>
-                <li class="footer-list-item"><a href="#mission">Our Mission</a></li>
-                <li class="footer-list-item"><a href="#core-comp">Core Competencies</a></li>
+                <li class="footer-list-item">
+                    <a href="#about" class="footer__link-anchor">About Us</a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#vision" class="footer__link-anchor">Our Vision</a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#mission" class="footer__link-anchor">Our Mission</a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#core-comp" class="footer__link-anchor">Core Competencies</a>
+                </li>
             </ul>
+            <div class="other__company-info">
+                <p class="company-info--text">UEI: HZRDR5FLCMW5</p>
+                <p class="company-info--text">CAGE CODE: 9RXR8</p>
+            </div>
+            <div class="other__company-info">
+                <p class="company-info--text">DUNS:119181235</p>
+                <p class="company-info--text">NAICS: 541519, 513210, 518210, 541512, 541513, 541511</p>
+            </div>
         </div>
         <div class="footer__bottom-row">
             <p>© 2024 Koomson Inc. All Rights Reserved.</p>
+        </div>
+        <div class="web__dev-signature">
+            <a href="https://ddwithkayc.com/" target="_blank" class="dev-signature">
+                <span class="footer-signature">Created By DDWithKayc</span>
+            </a>
         </div>
     </footer>
 </body>
