@@ -187,6 +187,10 @@ button:hover {
     width: 12vw;
 }
 
+.certs_img {
+    width: 7vw;
+}
+
 .stats-title {
     font-size: 60px;
     font-weight: 700
@@ -519,8 +523,13 @@ Small Screens */
 /* PHONE SCREENS */
 
 @media (max-width: 768px) {
+    
+    section, #heading {
+        padding: 70px 0;
+    }
+    
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /* HEADER */
@@ -529,6 +538,8 @@ Small Screens */
         text-align: center;
         padding: 36px;
     }
+
+    /* COMPANY STATS */
 
     .company--stats_row {
         flex-wrap: wrap;
@@ -541,6 +552,25 @@ Small Screens */
 
     .company__stats--img {
         width: 20vw;
+    }
+
+    /* ABOUT */
+
+    .about-row {
+        flex-direction: column;
+    }
+
+    .about__img--container {
+        border-right: none;
+    }
+    
+    .about__img {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about__column-content {
+        margin-top: 48px;
     }
 
     /* PP */
@@ -557,11 +587,54 @@ Small Screens */
         padding-bottom: 8px;
     }
 
+    /* VISION */
+
+    .vision-row {
+        flex-direction: column-reverse;
+    }
+
+    .vision__img-container {
+        border-left: none;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .vision-img {
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .vision__content-container {
+        margin-top: 48px;
+        padding-left: 48px;
+    }
+
+    /* MISSION */
+
+    .mission-row {
+        flex-direction: column;
+    }
+
+    .mission__img-container {
+        width: 100%;
+        max-width: 80%;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .mission-img {
+        max-width: 100%;
+        padding: 0;
+    }
+
     /* CC */
 
     .cc--list-container {
         width: 100%;
     }
+
+    /* CONTACT */
 
     .contact-row-bottom {
         flex-direction: column;
@@ -569,11 +642,21 @@ Small Screens */
 
     .contact__icon-container {
         align-items: center;
-        max-width: 60%;
+        max-width: 100%;
+        margin: 8px auto;
     }
 
     .contact-para {
         font-size: 18px;
+        
+    }
+
+    .phone {
+        margin-right: 62px;
+    }
+
+    .address {
+        margin-right: 55px;
     }
 
     /* FOOTER */
