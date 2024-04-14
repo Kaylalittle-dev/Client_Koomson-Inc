@@ -131,6 +131,95 @@ button:hover {
     background-color: #ff66c4;
 }
 
+.btn__menu {
+    background-color: #ff66c4;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    color: #0e021f;
+    display: none;
+}
+
+.btn_menu:hover {
+    background-color: transparent;
+}
+
+#btn-link:active {
+    color:#0e021f
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    max-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu__open, .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 35vh;
+    overflow-y: hidden;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list-item {
+    padding: 8px 0;
+}
+
+.menu__list-anchor {
+    font-size: 20px;
+    color: #0e021f;
+}
+
+.menu__list-anchor:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #cbe615;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.menu__list-anchor:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+#menu__btn-anchor {
+    font-size: 18px;
+}
+
+#menu__btn-anchor:active {
+    color: #0e021f;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #0e021f;
+}
 
 /* HEADER */
 
@@ -517,6 +606,14 @@ Small Screens */
     
     p {
         font-size: 18px;
+    }
+
+    .nav__list--container, .nav_btn-container {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
     }
 }
 
