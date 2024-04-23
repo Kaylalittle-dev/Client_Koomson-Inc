@@ -54,7 +54,7 @@ a{
     content: "";
     position: absolute;
     width: 0;
-    height: 3px;
+    height: 2px;
     bottom: 0;
     left: 0;
     background-color: #cbe615;
@@ -100,8 +100,10 @@ button:hover {
 }
 
 .nav__container {
+    max-width: 1200px;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -117,7 +119,7 @@ button:hover {
 .nav__list-item {
     font-size: 18px;
     font-weight: 600;
-    padding: 0 16px;
+    padding: 0 18px;
 }
 
 .btn--primary:hover {
@@ -335,7 +337,7 @@ button:hover {
 /* PAST PERFORMANCES */
 
 
-.pp {
+.pp.row {
     box-shadow: 0px 0px 8px #cbe615;
     border-radius: 25px;
     display: flex;
@@ -457,6 +459,11 @@ button:hover {
     padding-bottom: 48px;
 }
 
+.cc.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .cc--list-container {
     border: 1px solid #ff66c4;
     border-radius: 24px;
@@ -465,6 +472,7 @@ button:hover {
     margin: 16px;
     padding: 24px;
     text-align: center;
+    height: 15vh;
 }
 
 .cc--list-container:hover {
@@ -479,10 +487,13 @@ button:hover {
 
 /* CONTACT */
 
-
-
 #contact {
     border-top: 3px solid #ff66c42f;
+}
+
+.contact.row {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contact-row-top {
@@ -525,8 +536,8 @@ button:hover {
     justify-content: center;
 }
 
-/* FOOTER */
 
+/* FOOTER */
 
 #footer {
     background-color: #c663a0;
@@ -535,19 +546,33 @@ button:hover {
     position: relative;
 }
 
+.footer.row {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .footer__top-row {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+    margin-bottom: 50px;
 }
 
 .footer-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: calc(100% / 2);
 }
 
 .footer__logo-img {
-    max-height: 12vh;
+    max-height: 22vh;
     padding: 0 8px;
     text-align: left;
     transition: all 300ms ease;
@@ -560,13 +585,28 @@ button:hover {
 
 .footer-list-item {
     color: white;
-    padding: 0 16px;
+    padding: 8px;
 }
 
 .other__company-info {
     display: flex;
     flex-direction: column;
+    justify-content: end;
     color: white;
+    line-height: 2;
+    padding: 0 24px;
+    max-width: calc(100% / 2);
+    text-align: left;
+}
+
+.other__company-info.one {
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.other__company-info.two {
+    padding: 0 24px;
 }
 
 .company-info--text {
@@ -576,8 +616,8 @@ button:hover {
 .footer__bottom-row {
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 25px;
 }
 
 .footer__link-anchor {
@@ -636,11 +676,6 @@ Small Screens, IPads*********************************************/
         font-size: 36px;
     }
 
-    .row {
-        flex-direction: column;
-        max-width: 800px;
-    }
-
     .nav__list {
         display: none;
     }
@@ -649,7 +684,197 @@ Small Screens, IPads*********************************************/
         display: block;
     }
 
+    .row {
+        flex-direction: column;
+        text-align: center;
+        max-width: 650px;
+    }
 
+
+    /* About */
+    
+    .about.row {
+        flex-direction: column;
+    }
+
+    .about__img--container {
+        border-right: none;
+    }
+    
+    .about__img {
+        padding-bottom: 60px;
+    }
+
+
+    /* Company Stats */
+
+    .company--stats {
+        max-width: 650px;
+    }
+    
+    .company--stats_column {
+        padding: 60px 0;
+    }
+
+    .company__stats--img {
+        width: 20vw;
+    }
+    
+    .stats-title {
+        font-size: 60px;
+        font-weight: 500;
+    }
+    
+    .stats-text {
+        font-size: 24px;
+    }
+
+
+    /* Past Performances */
+    
+    .pp.row {
+        max-width: 750px;
+    }
+
+    .pp__heading {
+        padding: 50px 0;
+    }
+    
+    .pp__content-container {
+        padding-bottom: 50px;
+    }
+    
+    .pp__img {
+        width: 15vw;
+    }
+    
+    .pp-text {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    /* Our Vision */
+
+    #vision {
+        flex-direction: column-reverse;
+    }
+
+    .vision.row {
+        flex-direction: column-reverse;
+        max-width: 650px;
+    }
+    
+    .vision__img-container {
+        border-left: none;
+        padding: 0 0 50px 0;
+    }
+    
+    .vision__content-container {
+        padding-left: 0;
+    }
+
+
+    /* Mission */
+    
+    .mission__img-container {
+        border-right: none;
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
+    
+    .mission-img {
+        max-width: 600px;
+        padding: 24px;
+    }
+    
+    .mission__content-container {
+        padding-left: 0;
+        max-width: 80%;
+    }
+
+
+    /* Core Comp */
+
+    .cc-heading {
+        padding-bottom: 50px;
+    }
+
+    .cc.row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .cc--list-container {
+        height: 25vh;
+        width: calc(100% / 3);
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cc--list-container:hover {
+        background-color: #cae61550;
+    }
+
+    .cc-list-para {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+
+    /* Contact Us */
+    
+    .contact-row-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    
+    .contact-heading {
+        padding-bottom: 48px;
+    }
+    
+    .contact-btn {
+        border-radius: 40px;
+        font-size: 22px;
+        padding: 16px 44px;
+        margin: 24px 0;
+    }
+    
+    .contact_icon-circle {
+        height: 3vh;
+        width: 3vw;
+        padding: 12px;
+        margin-right: 20px;
+    }
+
+
+    /* FOOTER */
+
+.footer.row {
+    margin: 0 auto;
+    max-width: 650px;
+    text-align: left;
+}
+
+.footer__logo-img {
+    max-height: 20vh;
+    padding: 0 12px;
+}
+
+.footer-list-item {
+    padding: 0 16px;
+}
+
+.web__dev-signature {
+    padding: 0 8px 8px 0;
+}
 }
 
 
@@ -665,12 +890,19 @@ Small Screens, IPads*********************************************/
         font-size: 16px;
     }
 
+    .row {
+        max-width: 500px;
+    }
+
+
     /* HEADER */
 
     #heading {
         text-align: center;
         padding: 36px;
+        max-width: 500px;
     }
+
 
     /* COMPANY STATS */
 
@@ -686,6 +918,7 @@ Small Screens, IPads*********************************************/
     .company__stats--img {
         width: 20vw;
     }
+
 
     /* ABOUT */
 
@@ -704,7 +937,9 @@ Small Screens, IPads*********************************************/
 
     .about__column-content {
         margin-top: 48px;
+        max-width: 100%;
     }
+
 
     /* PP */
 
@@ -715,15 +950,21 @@ Small Screens, IPads*********************************************/
         text-align: center;
     }
 
+    .pp__img-container {
+        padding-bottom: 40px;
+    }
+
     .pp__img {
-        width: 35vw;
+        width: 25vw;
         padding-bottom: 8px;
     }
 
+
     /* VISION */
 
-    .vision-row {
-        flex-direction: column-reverse;
+    .vision.row {
+        max-width: 500px;
+        margin: 0 auto;
     }
 
     .vision__img-container {
@@ -740,8 +981,9 @@ Small Screens, IPads*********************************************/
     
     .vision__content-container {
         margin-top: 48px;
-        padding-left: 48px;
+        max-width: 80%;
     }
+
 
     /* MISSION */
 
@@ -756,16 +998,13 @@ Small Screens, IPads*********************************************/
         padding-right: 0;
     }
 
-    .mission-img {
-        max-width: 100%;
-        padding: 0;
-    }
 
     /* CC */
 
     .cc--list-container {
         width: 100%;
     }
+
 
     /* CONTACT */
 
@@ -792,14 +1031,33 @@ Small Screens, IPads*********************************************/
         margin-right: 55px;
     }
 
+
     /* FOOTER */
 
     .footer__top-row {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .footer-list {
         padding-bottom: 24px;
+    }
+
+    .other__company-info {
+        max-width: calc(100% / 2);
+        text-align: left;
+    }
+
+    .other__company-info.one {
+        padding-bottom: 24px;
+        text-align: left;
+    }
+
+    .web__dev-signature {
+        position: absolute;
+        padding: 0 16px 12px 0;
+        bottom: 0;
+        left: 35%;
     }
 }
