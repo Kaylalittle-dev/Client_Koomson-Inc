@@ -70,11 +70,11 @@ a{
 section {
     padding: 96px 0;
 }
-nav {
-    display: flex;
-    justify-content: space-between;
+
+.row {
+    max-width: 1200px;
     align-items: center;
-    margin: 16px 40px 32px;
+    justify-content: center;
 }
 
 button {
@@ -95,10 +95,13 @@ button:hover {
 
 /* NAV BAR */
 
-.nav-bar--container {
+.nav {
     display: flex;
-    max-width: 1200px;
-    align-items: center;
+}
+
+.nav__container {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -122,30 +125,18 @@ button:hover {
     border: 1px solid #ff66c4;
 }
 
-.btn--secondary {
-    background-color: transparent;
-    border: 1px solid #ff66c4;
-}
-
-.btn--secondary:hover {
-    background-color: #ff66c4;
-}
-
 .btn__menu {
-    background-color: #ff66c4;
-    font-size: 18px;
+    background-color: transparent;
+    font-size: 30px;
     text-align: center;
     border: none;
     color: #0e021f;
     display: none;
 }
 
-.btn_menu:hover {
+.btn__menu:hover {
     background-color: transparent;
-}
-
-#btn-link:active {
-    color:#0e021f
+    opacity: .8;
 }
 
 .menu__backdrop {
@@ -156,21 +147,32 @@ button:hover {
     right: 0;
     bottom: 0;
     z-index: 100;
-    max-height: 50vh;
+    max-height: fit-content;
     justify-content: center;
     align-items: center;
-    transition: all 300ms ease-in-out;
+    transition: all 300ms ease;
     opacity: 0;
     visibility: hidden;
 }
 
-.menu__open, .menu__backdrop {
-    visibility: visible;
+.logo_img-menu {
+    position: absolute;
+    width: 18vw;
+    transition: all 300ms ease;
+}
+
+.logo_img-menu:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.menu--open .menu__backdrop {
     opacity: 1;
+    visibility: visible;
 }
 
 .menu--open {
-    max-height: 35vh;
+    max-height: 50vh;
     overflow-y: hidden;
 }
 
@@ -221,6 +223,11 @@ button:hover {
     color: #0e021f;
 }
 
+.menu__btn-contact {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* HEADER */
 
 
@@ -253,7 +260,7 @@ button:hover {
 /* COMPANY STATS */
 
 
-.company--stats_row {
+.company--stats {
     box-shadow: 0px 0px 8px #cbe615;
     border-radius: 25px;
     display: flex;
@@ -300,7 +307,7 @@ button:hover {
     padding-right: 48px;
 }
 
-.about-row {
+.about {
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -328,12 +335,15 @@ button:hover {
 /* PAST PERFORMANCES */
 
 
-.pp-row {
+.pp {
     box-shadow: 0px 0px 8px #cbe615;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 24px;
 }
 
 .pp__heading {
@@ -344,6 +354,8 @@ button:hover {
 .pp__content-container {
     display: flex;
     padding-bottom: 48px;
+    align-items: center;
+    justify-content: center;
 }
 
 .pp__img-container {
@@ -352,10 +364,11 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: calc(100% / 3);
+    padding: 0 40px;
 }
 
 .pp__img {
-    width: 18vw;
+    width: 15vw;
 }
 
 .pp-text {
@@ -375,7 +388,7 @@ button:hover {
     align-items: center;
 }
 
-.vision-row {
+.vision {
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -403,7 +416,7 @@ button:hover {
     align-items: center;
 }
 
-.mission-row {
+.mission {
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -433,7 +446,7 @@ button:hover {
     border-top: 3px solid #ff66c42f;
 }
 
-.cc-row {
+.cc {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -533,7 +546,22 @@ button:hover {
     justify-content: center;
 }
 
+.footer__logo-img {
+    max-height: 12vh;
+    padding: 0 8px;
+    text-align: left;
+    transition: all 300ms ease;
+}
 
+.footer__logo-img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.footer-list-item {
+    color: white;
+    padding: 0 16px;
+}
 
 .other__company-info {
     display: flex;
@@ -543,11 +571,6 @@ button:hover {
 
 .company-info--text {
     font-size: 18px;
-}
-
-.footer-list-item {
-    color: white;
-    padding: 0 16px;
 }
 
 .footer__bottom-row {
@@ -596,28 +619,41 @@ button:hover {
     opacity: .7;
 }
 
-/* MEDIA QUERIES
-Small Screens */
+
+/*********************************** MEDIA QUERIES
+Small Screens, IPads*********************************************/
 
 @media (max-width: 1024px) {
     section, #heading {
         padding: 80px 0;
     }
-    
-    p {
-        font-size: 18px;
+
+    h1 {
+        font-size: 40px;
     }
 
-    .nav__list--container, .nav_btn-container {
+    h2 {
+        font-size: 36px;
+    }
+
+    .row {
+        flex-direction: column;
+        max-width: 800px;
+    }
+
+    .nav__list {
         display: none;
     }
 
     .btn__menu {
         display: block;
     }
+
+
 }
 
-/* PHONE SCREENS */
+
+/************************** PHONE SCREENS **************************/
 
 @media (max-width: 768px) {
     

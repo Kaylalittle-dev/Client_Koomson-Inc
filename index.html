@@ -6,43 +6,59 @@
     <title>Koomson Inc.</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/0b5ae10d2b.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
         
-        <nav class="nav-bar--container">
-            <!-- <h3 class="logo-text">Koomson Inc.</h3> -->
-            <img src="assets/FullLogo_Transparent.png" alt="" class="logo_img">
-            <div class="nav__list--container">
+        <nav>
+
+            <div class="nav__container">
+                <div class="logo__img-container">
+                    <a href="#">
+                        <img src="assets/FullLogo_Transparent.png" alt="logo" class="logo_img">
+                    </a>
+                </div>
+                
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a href="#about" class=
+                    <li class="nav__list-item">
+                        <a href="#about" class=
                         "nav__list-anchor
-                        link__hover-effect">About Us</a></li>
-                    <li class="nav__list-item"><a href="#vision" class=
+                        link__hover-effect">About Us</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#vision" class=
                         "nav__list-anchor
-                        link__hover-effect">Our Vision</a></li>
+                        link__hover-effect">Our Vision</a>
+                    </li>
                     <li class=
-                    "nav__list-item"><a href="#mission" class=
+                    "nav__list-item">
+                        <a href="#mission" class=
                     "nav__list-anchor
-                    link__hover-effect">Our Mission</a></li>
-                    <li class="nav__list-item"><a href="#core-comp" class=
+                    link__hover-effect">Our Mission</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#core-comp" class=
                         "nav__list-anchor
-                        link__hover-effect">Core Competencies</a></li>
+                        link__hover-effect">Core Competencies</a>
+                    </li>
+                    <li class="nav__list-item nav_btn-container">
+                        <a href="/contact.html" target="_blank" class=
+                        "nav__list-anchor
+                        link__hover-effect btn--primary" id="btn-link">Core Competencies</a>
+                    </li>
                 </ul>
-            </div>
-            <div class="nav_btn-container">
-                <button class="btn--primary">
-                    <a href="/contact.html" target="_blank" id="btn-link">Contact Us</a>
-                </button>
-            </div>
 
             <!-- OPEN CLOSE MENU BTN -->
+                
             <button class="btn__menu" onclick="openMenu()">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="menu__backdrop">
-                <button class="btn__menu--close" onclick="closeMenu()">
+                <a href="#" class="menu__logo-link">
+                    <img src="assets/FullLogo_Transparent.png" alt="" class="logo_img-menu" onclick="closeMenu()">
+                </a>
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                     <i class="fa-solid fa-x"></i>
                 </button>
                 <ul class="menu__links">
@@ -59,13 +75,13 @@
                         <a href="#core-comp" class="menu__list-anchor" onclick="closeMenu()">Core Competencies</a>
                     </li>
                     <li class="menu__list-item">
-                        <button class="menu__btn">
-                            <a href="/contact.html" target="_blank" id="menu__btn-anchor" >Contact Us</a>
-                        </button>
+                        <a href="/contact.html" target="_blank" id="menu__btn-anchor" onclick="closeMenu()" >
+                            <button class="menu__btn-contact">Contact Us</button>
+                        </a>
                     </li>
                 </ul>
+                </div>
             </div>
-            
         </nav>
 
         <!-- HEADING -->
@@ -80,7 +96,7 @@
     <main>
 
         <section id="company-stats">
-            <div class="company--stats_row">
+            <div class="company--stats row">
                 <div class="company--stats_column">
                     <img src="assets/undraw_experts_re_i40h.svg" class="company__stats--img" alt="">
                     <span class="stats-text">years of experience</span>
@@ -101,7 +117,7 @@
         </section>
 
         <section id="about">
-            <div class="about-row">
+            <div class="about row">
                 <div class="about__img--container">
                     <img src="assets/undraw_about_us_page_re_2jfm.svg" 
                    class="about__img" alt="">
@@ -115,7 +131,7 @@
 
 
         <section id="past-performances">
-            <div class="pp-row">
+            <div class="pp row">
                 <div class="pp__heading-container">
                     <h2 class="pp__heading">Learning & Growth Milestones</h2>
                 </div>
@@ -138,7 +154,7 @@
 
 
         <section id="vision">
-            <div class="vision-row">
+            <div class="vision row">
                 <div class="vision__content-container">
                     <h2 class="vision-heading">Our Vision</h2>
                     <p class="vision-para">Our vision is to help create a cyber-resilient future where individuals and organizations can thrive in a secure digital environment.
@@ -152,7 +168,7 @@
 
 
         <section id="mission">
-            <div class="mission-row">
+            <div class="mission row">
                 <div class="mission__img-container">
                     <img src="assets/undraw_goals_re_lu76.svg" alt="" class="mission-img">
                 </div>
@@ -167,7 +183,7 @@
 
         <section id="core-comp">
             <h2 class="cc-heading">Core Competencies</h2>
-            <div class="cc-row">
+            <div class="cc row">
                 <div class="cc--list-container">
                     <i class="fa-solid fa-shield-halved"></i>
                     <p class="cc-list-para">Security Operations (Tier 1 and Tier 2 support)</p>
@@ -212,7 +228,7 @@
         </section>
 
         <section id="contact">
-            <div class="contact-row">
+            <div class="contact row">
                 <div class="contact-row-top">
                     <h2 class="contact-heading">Contact Us</h2>
                 <a href="contact.html">
@@ -244,37 +260,44 @@
 
     </main>
     <footer id="footer">
-        <div class="footer__top-row">
-            <ul class="footer-list">
-                <li class="footer-list-item">
-                    <a href="#about" class="footer__link-anchor">About Us</a>
-                </li>
-                <li class="footer-list-item">
-                    <a href="#vision" class="footer__link-anchor">Our Vision</a>
-                </li>
-                <li class="footer-list-item">
-                    <a href="#mission" class="footer__link-anchor">Our Mission</a>
-                </li>
-                <li class="footer-list-item">
-                    <a href="#core-comp" class="footer__link-anchor">Core Competencies</a>
-                </li>
-            </ul>
-            <div class="other__company-info">
-                <p class="company-info--text">UEI: HZRDR5FLCMW5</p>
-                <p class="company-info--text">CAGE CODE: 9RXR8</p>
+        <div class="row">
+            <div class="footer__top-row">
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">
+                            <img src="assets/FullLogo_Transparent.png" alt="logo_img" class="footer__logo-img">
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#about" class="footer__link-anchor">About Us</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#vision" class="footer__link-anchor">Our Vision</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#mission" class="footer__link-anchor">Our Mission</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#core-comp" class="footer__link-anchor">Core Competencies</a>
+                    </li>
+                </ul>
+                <div class="other__company-info">
+                    <p class="company-info--text">UEI: HZRDR5FLCMW5</p>
+                    <p class="company-info--text">CAGE CODE: 9RXR8</p>
+                </div>
+                <div class="other__company-info">
+                    <p class="company-info--text">DUNS:119181235</p>
+                    <p class="company-info--text">NAICS: 541519, 513210, 518210, 541512, 541513, 541511</p>
+                </div>
             </div>
-            <div class="other__company-info">
-                <p class="company-info--text">DUNS:119181235</p>
-                <p class="company-info--text">NAICS: 541519, 513210, 518210, 541512, 541513, 541511</p>
+            <div class="footer__bottom-row">
+                <p>© 2024 Koomson Inc. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer__bottom-row">
-            <p>© 2024 Koomson Inc. All Rights Reserved.</p>
-        </div>
-        <div class="web__dev-signature">
-            <a href="https://ddwithkayc.com/" target="_blank" class="dev-signature">
-                <span class="footer-signature">Created By DDWithKayc</span>
-            </a>
+            <div class="web__dev-signature">
+                <a href="https://ddwithkayc.com/" target="_blank" class="dev-signature">
+                    <span class="footer-signature">Created By DDWithKayc</span>
+                </a>
+            </div>
         </div>
     </footer>
 </body>

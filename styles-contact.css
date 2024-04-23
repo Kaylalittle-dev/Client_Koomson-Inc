@@ -16,3 +16,166 @@ body {
     overflow-x: hidden;
     padding: 32px;
 }
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 32px;
+}
+
+section, #heading {
+    padding: 96px 0;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding-bottom: 48px;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+.nav__list-anchor{
+    color:black;
+    position: relative;
+}
+
+.nav__list-anchor:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #cbe615;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.nav__list-anchor:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+section {
+    padding: 96px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 40px 32px;
+}
+
+a {
+    color: #0e021f;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #ff66c4;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+button:hover {
+    background-color: #c663a0;
+}
+
+/* NAV BAR */
+
+.nav-bar--container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_img {
+    max-width:200px;
+}
+
+
+.nav__list{
+    display: flex;
+}
+
+.nav__list-item {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 16px;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #cbe615;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-link:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.btn--primary:hover {
+    background-color: transparent;
+    border: 1px solid #ff66c4;
+}
+
+.btn--secondary {
+    background-color: transparent;
+    border: 1px solid #ff66c4;
+}
+
+.btn--secondary:hover {
+    background-color: #ff66c4;
+}
+
+/********************* HEADING ********************/
+
+#heading {
+    background-color: #ff66c433;
+    margin: 0 -32px;
+}
+
+.heading_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.heading__logo-img {
+    max-height: 20vw;
+}
+
+.heading_title {
+
+}
