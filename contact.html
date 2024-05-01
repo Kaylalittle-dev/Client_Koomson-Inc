@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="styles-contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="styles-contact.css">
 </head>
+
 <body>
 
-    <header>
-        
-        <nav class="nav-bar--container">
-            <img src="assets/FullLogo_Transparent.png" class="logo_img" alt="logo" class="logo_img">
-            <div class="nav__list--container">
-                <ul class="nav__list">
-                    <li class="nav__list-item">
-                        <a href="#about" class="nav-link">About Us</a></li>
-                    <li class="nav__list-item">
-                        <a href="#vision" class="nav-link">Our Vision</a></li>
-                    <li class="nav__list-item">
-                        <a href="#mission" class="nav-link">Our Mission</a></li>
-                    <li class="nav__list-item"><a href="#core-comp" class="nav-link">Core Competencies</a></li>
-                </ul>
-            </div>
-            <div class="nav_btn-container">
-                <button class="btn--primary src="#contact">
-                    <a href="#contact">Contact Us</a>
-                </button>
-            </div>
-            
-        </nav>
+  <header>
+    <nav class="nav-bar--container">
+      <img src="assets/FullLogo_Transparent.png" class="logo_img" alt="logo" class="logo_img">
+      <div class="nav__list--container">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#vision" class="nav-link">Our Vision</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#mission" class="nav-link">Our Mission</a>
+          </li>
+          <li class="nav__list-item"><a href="#core-comp" class="nav-link">Core Competencies</a></li>
+        </ul>
+      </div>
+      <div class="nav_btn-container">
+        <button class="btn--primary src=" #contact">
+          <a href="#contact">Contact Us</a>
+        </button>
+      </div>
 
-        <div id="heading">
-            <div class="heading_row">
-                <img src="assets/FullLogo_Transparent.png" alt="" class="heading__logo-img">
-                <h1 class="heading_title">Cybersecurity Services for Organizations</h1>
-            <p class="heading-para">Helping Secure Environments and Giving Clients The Ability To Byte Back Digitally</p>
-            <button class="heading-btn">Get Started</button>
-            </div>
-            
-        </div>
+    </nav>
 
-    </header>
+    <div id="heading">
+      <div class="heading_row">
+        <img src="assets/FullLogo_Transparent.png" alt="" class="heading__logo-img">
+        <h1 class="heading_title">Contact Us</h1>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="contact-form">
-            <div class="contact-from_row">
-                <form action="">
-                    
-                </form>
-            </div>
-        </section>
-    </main>
+  <main>
+    <section class="contact-form">
+      <div class="contact-from_row">
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label fName--label">First Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label lName--label">Last Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Company Name</label>
+            <input class="input" name="user_name" type="text"></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it our way!
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
