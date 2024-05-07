@@ -5,74 +5,197 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Page</title>
-  <link rel="stylesheet" href="styles-contact.css">
+  <link rel="stylesheet" href="contact.css">
+  <script src="https://kit.fontawesome.com/0b5ae10d2b.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
-
   <header>
-    <nav class="nav-bar--container">
-      <img src="assets/FullLogo_Transparent.png" class="logo_img" alt="logo" class="logo_img">
-      <div class="nav__list--container">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="#about" class="nav-link">About Us</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#vision" class="nav-link">Our Vision</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#mission" class="nav-link">Our Mission</a>
-          </li>
-          <li class="nav__list-item"><a href="#core-comp" class="nav-link">Core Competencies</a></li>
-        </ul>
-      </div>
-      <div class="nav_btn-container">
-        <button class="btn--primary src=" #contact">
-          <a href="#contact">Contact Us</a>
-        </button>
-      </div>
+    <nav>
+        <div class="nav__container">
+            <div class="logo__img-container">
+                <a href="#index.html">
+                    <img src="assets/FullLogo_Transparent.png" alt="logo" class="logo_img">
+                </a>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a href="#about" class=
+                    "nav__list-anchor
+                    link__hover-effect">About Us</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#vision" class=
+                    "nav__list-anchor
+                    link__hover-effect">Our Vision</a>
+                </li>
+                <li class=
+                "nav__list-item">
+                    <a href="#mission" class=
+                "nav__list-anchor
+                link__hover-effect">Our Mission</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#core-comp" class=
+                    "nav__list-anchor
+                    link__hover-effect">Core Competencies</a>
+                </li>
+                <li class="nav__list-item nav_btn-container">
+                    <a href="/contact.html" target="_blank" class="btn__contact-link" id="btn-link">
+                    <button class="btn__contact">Contact Us</button></a>
+                </li>
+            </ul>
 
+        <!-- OPEN CLOSE MENU BTN -->
+            
+        <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+            <a href="#" class="menu__logo-link">
+                <img src="assets/FullLogo_Transparent.png" alt="" class="logo_img-menu" onclick="closeMenu()">
+            </a>
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <ul class="menu__links">
+                <li class="menu__list-item">
+                    <a href="#about" class="menu__list-anchor" onclick="closeMenu()">About Us</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#vision" class="menu__list-anchor" onclick="closeMenu()">Our Vision</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#mission" class="menu__list-anchor" onclick="closeMenu()">Our Mission</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#core-comp" class="menu__list-anchor" onclick="closeMenu()">Core Competencies</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="/contact.html" target="_blank" id="menu__btn-anchor" onclick="closeMenu()" >
+                        <button class="menu__btn-contact">Contact Us</button>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
     </nav>
 
+    <!-- HEADING -->
+
     <div id="heading">
-      <div class="heading_row">
-        <img src="assets/FullLogo_Transparent.png" alt="" class="heading__logo-img">
-        <h1 class="heading_title">Contact Us</h1>
-      </div>
+        <img src="assets/FullLogo_Transparent.png" alt="" class="logo_img head_logo-img">
+        <h1>Contact Us</h1>
+        <p class="heading-para">Fill Out Form Below To Send Us A Quick Message</p>
     </div>
-  </header>
+
+</header>
 
   <main>
-    <section class="contact-form">
-      <div class="contact-from_row">
-        <form id="contact__form" onsubmit="contact(event)">
-          <div class="form__item">
-            <label class="form__item--label fName--label">First Name</label>
-            <input class="input" name="user_name" type="text" required></input>
+    <!--------------------- CONTACT SECTION ----------------------->
+    <section class="contact__section">
+      <div class="contact__row">
+        <div class="contact__column contact__column--left">
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label fName--label">First Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+              <div class="form__item">
+                <label class="form__item--label lName--label">Last Name</label>
+                <input class="input" name="user_name" type="text" required></input>
+              </div>
+              <div class="form__item">
+                <label class="form__item--label">Company Name</label>
+                <input class="input" name="user_name" type="text"></input>
+              </div>
+              <div class="form__item">
+                <label class="form__item--label">Email</label>
+                <input class="input" name="user_email" type="email" required></input>
+              </div>
+              <div class="form__item">
+                <label class="form__item--label">Message</label>
+                <textarea class="input" name="message" type="text" required></textarea>
+              </div>
+              <button id="contact__submit" class="form__submit">
+              Send it our way!
+              </button>
+          </form>
+        </div>
+          <div class="contact__column contact__column--right">
+            <div class="location__content">
+              <figure class="icon__container">
+                <i class="fa-solid fa-location-dot"></i>
+              </figure>
+              <h3>Florida</h3>
+              <p>Jacksonville, FL 32210</p>
+            </div>
+            <div class="phone-number__content">
+              <figure class="icon__container">
+                <i class="fa-solid fa-phone"></i>
+              </figure>
+              <h3>Phone Number</h3>
+              <p>904-xxx-xxxx</p>
+            </div>
+            <div class="other-company-info__content">
+              <figure class="icon__container">
+                <i class="fa-solid fa-circle-info"></i>
+              </figure>
+              <h3>Other Company Info</h3>
+              <p>Cage Code:9RXR8</p>
+              <p>DUNS #:119181235</p>
+              <p>NAICS: 541519, 513210, 518210,
+                <br> 541512, 541513, 541511</p>
+              <p>UEI: HZRDR5FLCMW5</p>
+            </div>
           </div>
-          <div class="form__item">
-            <label class="form__item--label lName--label">Last Name</label>
-            <input class="input" name="user_name" type="text" required></input>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Company Name</label>
-            <input class="input" name="user_name" type="text"></input>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Email</label>
-            <input class="input" name="user_email" type="email" required></input>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Message</label>
-            <textarea class="input" name="message" type="text" required></textarea>
-          </div>
-          <button id="contact__submit" class="form__submit">
-            Send it our way!
-          </button>
-        </form>
       </div>
     </section>
+    <footer id="footer">
+      <div class="footer row">
+        <div class="footer__top-row">
+          <div class="footer__logo-container">
+            <a href="#">
+              <img src="assets/FullLogo_Transparent.png" alt="logo_img" class="footer__logo-img">
+            </a>
+          </div>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="#about" class="footer__link-anchor">About Us</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#vision" class="footer__link-anchor">Our Vision</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#mission" class="footer__link-anchor">Our Mission</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#core-comp" class="footer__link-anchor">Core Competencies</a>
+            </li>
+          </ul>
+          <div class="other__company-info one">
+            <p class="company-info--text">UEI: HZRDR5FLCMW5</p>
+            <p class="company-info--text">CAGE CODE: 9RXR8</p>
+          </div>
+          <div class="other__company-info two>
+                      <p class="company-info--text">DUNS #:119181235</p>
+            <p class="company-info--text">NAICS: 541519, 513210, 518210,
+              <br>
+              541512, 541513, 541511
+            </p>
+          </div>
+        </div>
+        <div class="footer__bottom-row">
+          <p>© 2024 Koomson Inc. All Rights Reserved.</p>
+        </div>
+        <div class="web__dev-signature">
+          <a href="https://ddwithkayc.com/" target="_blank" class="dev-signature">
+            <span class="footer-signature">Created By DDWithKayC</span>
+          </a>
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
 

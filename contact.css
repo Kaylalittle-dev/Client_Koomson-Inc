@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 32px;
+}
+
+section, #heading {
+    padding: 96px 0;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 48px;
+}
+
+p {
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  position: relative;
+  transition: all 300ms ease;
+}
+
+.nav__list-anchor{
+  color:black;
+  position: relative;
+}
+
+.nav__list-anchor:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #cbe615;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.nav__list-anchor:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+section {
+  padding: 96px 0;
+}
+
+.row {
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #ff66c4;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+button:hover {
+  background-color: #c663a0;
+  transform: scale(0.9);
+}
+
+
+/* NAV BAR */
+
+.nav {
+  display: flex;
+}
+
+.nav__container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_img {
+  max-width:200px;
+}
+
+
+.nav__list{
+  display: flex;
+}
+
+.nav__list-item {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 18px;
+}
+
+.btn--primary:hover {
+  background-color: transparent;
+  border: 1px solid #ff66c4;
+}
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  color: #0e021f;
+  display: none;
+}
+
+.btn__menu:hover {
+  background-color: transparent;
+  opacity: .8;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  max-height: fit-content;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logo_img-menu {
+  position: absolute;
+  width: 18vw;
+  transition: all 300ms ease;
+}
+
+.logo_img-menu:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.menu--open .menu__backdrop {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu--open {
+  max-height: 50vh;
+  overflow-y: hidden;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list-item {
+  padding: 8px 0;
+}
+
+.menu__list-anchor {
+  font-size: 20px;
+  color: #0e021f;
+}
+
+.menu__list-anchor:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #cbe615;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.menu__list-anchor:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+#menu__btn-anchor {
+  font-size: 18px;
+}
+
+#menu__btn-anchor:active {
+  color: #0e021f;
+}
+
+.btn__menu--close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #0e021f;
+}
+
+.menu__btn-contact {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/********************* HEADING ********************/
+
+#heading {
+  background-color: #ff66c42f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -32px;
+}
+
+.head_logo-img {
+    max-width: 25vw;
+}
+
+.heading-para {
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+
+.heading-btn {
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 20px 52px;
+}
+
+/*********************** CONTACT SECTION *************************/
+
+.contact__row {
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/**************************** FOOTER *******************************/
+
+#footer {
+  background-color: #c663a0;
+  margin: 0 -32px -32px;
+  padding: 50px 0;
+  position: relative;
+  }
+  
+  .footer.row {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  }
+  
+  .footer__top-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0;
+  margin-bottom: 50px;
+  }
+  
+  .footer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: calc(100% / 2);
+  }
+  
+  .footer__logo-img {
+  max-height: 22vh;
+  padding: 0 8px;
+  text-align: left;
+  transition: all 300ms ease;
+  }
+  
+  .footer__logo-img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  }
+  
+  .footer-list-item {
+  color: white;
+  padding: 8px;
+  }
+  
+  .other__company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  line-height: 2;
+  padding: 0 24px;
+  max-width: calc(100% / 2);
+  text-align: left;
+  }
+  
+  .other__company-info.one {
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+  .other__company-info.two {
+  padding: 0 24px;
+  }
+  
+  .company-info--text {
+  font-size: 18px;
+  }
+  
+  .footer__bottom-row {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  
+  .footer__link-anchor {
+  color:white;
+  font-size: 18px;
+  position: relative;
+  }
+  
+  .footer__link-anchor:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #cbe615;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+  }
+  
+  .footer__link-anchor:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  .web__dev-signature {
+    position: absolute;
+    padding: 0 16px 12px 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .dev-signature {
+    color: white;
+    font-style: italic;
+  }
+  
+  .dev-signature:hover {
+    opacity: .7;
+    transform: scale(0.8);
+  }
+  
+  .dev-signature:active {
+    transform: scale(1.1);
+  }
+  
+  .footer-signature:hover {
+    
+  }

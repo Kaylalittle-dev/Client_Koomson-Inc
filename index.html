@@ -1,303 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koomson Inc.</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/0b5ae10d2b.js" crossorigin="anonymous"></script>
-    <script src="index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koomson Inc.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/0b5ae10d2b.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </head>
+
 <body>
-    <header>
-        
-        <nav>
+  <header>
 
-            <div class="nav__container">
-                <div class="logo__img-container">
-                    <a href="#">
-                        <img src="assets/FullLogo_Transparent.png" alt="logo" class="logo_img">
-                    </a>
-                </div>
-                
-                <ul class="nav__list">
-                    <li class="nav__list-item">
-                        <a href="#about" class=
-                        "nav__list-anchor
+    <nav>
+
+      <div class="nav__container">
+        <div class="logo__img-container">
+          <a href="#">
+            <img src="assets/FullLogo_Transparent.png" alt="logo" class="logo_img">
+          </a>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#about" class="nav__list-anchor
                         link__hover-effect">About Us</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a href="#vision" class=
-                        "nav__list-anchor
+          </li>
+          <li class="nav__list-item">
+            <a href="#vision" class="nav__list-anchor
                         link__hover-effect">Our Vision</a>
-                    </li>
-                    <li class=
-                    "nav__list-item">
-                        <a href="#mission" class=
-                    "nav__list-anchor
+          </li>
+          <li class="nav__list-item">
+            <a href="#mission" class="nav__list-anchor
                     link__hover-effect">Our Mission</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a href="#core-comp" class=
-                        "nav__list-anchor
+          </li>
+          <li class="nav__list-item">
+            <a href="#core-comp" class="nav__list-anchor
                         link__hover-effect">Core Competencies</a>
-                    </li>
-                    <li class="nav__list-item nav_btn-container">
-                        <a href="/contact.html" target="_blank" class="btn__contact-link" id="btn-link">
-                        <button class="btn__contact">Contact Us</button></a>
-                    </li>
-                </ul>
+          </li>
+          <li class="nav__list-item nav_btn-container">
+            <a href="/contact.html" target="_blank" class="btn__contact-link" id="btn-link">
+              <button class="btn__contact">Contact Us</button></a>
+          </li>
+        </ul>
 
-            <!-- OPEN CLOSE MENU BTN -->
-                
-            <button class="btn__menu" onclick="openMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="menu__backdrop">
-                <a href="#" class="menu__logo-link">
-                    <img src="assets/FullLogo_Transparent.png" alt="" class="logo_img-menu" onclick="closeMenu()">
-                </a>
-                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                    <i class="fa-solid fa-x"></i>
-                </button>
-                <ul class="menu__links">
-                    <li class="menu__list-item">
-                        <a href="#about" class="menu__list-anchor" onclick="closeMenu()">About Us</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#vision" class="menu__list-anchor" onclick="closeMenu()">Our Vision</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#mission" class="menu__list-anchor" onclick="closeMenu()">Our Mission</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#core-comp" class="menu__list-anchor" onclick="closeMenu()">Core Competencies</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="/contact.html" target="_blank" id="menu__btn-anchor" onclick="closeMenu()" >
-                            <button class="menu__btn-contact">Contact Us</button>
-                        </a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
+        <!-- OPEN CLOSE MENU BTN -->
 
-        <!-- HEADING -->
-
-        <div id="heading">
-            <img src="assets/FullLogo_Transparent.png" alt="" class="logo_img head_logo-img">
-            <h1>Cybersecurity Services for Organizations</h1>
-            <p class="heading-para">Helping Secure Environments and Giving Clients The Ability To Byte Back Digitally</p>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <a href="#" class="menu__logo-link">
+            <img src="assets/FullLogo_Transparent.png" alt="" class="logo_img-menu" onclick="closeMenu()">
+          </a>
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fa-solid fa-x"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list-item">
+              <a href="#about" class="menu__list-anchor" onclick="closeMenu()">About Us</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#vision" class="menu__list-anchor" onclick="closeMenu()">Our Vision</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#mission" class="menu__list-anchor" onclick="closeMenu()">Our Mission</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#core-comp" class="menu__list-anchor" onclick="closeMenu()">Core Competencies</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="/contact.html" target="_blank" id="menu__btn-anchor" onclick="closeMenu()">
+                <button class="menu__btn-contact">Contact Us</button>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
 
-    </header>
-    <main>
+    <!-- HEADING -->
 
-        <section id="company-stats">
-            <div class="company--stats row">
-                <div class="company--stats_column">
-                    <img src="assets/undraw_experts_re_i40h.svg" class="company__stats--img" alt="">
-                    <span class="stats-text">years of experience</span>
-                </div>
-                <div class="company--stats_column">
-                    <img src="assets/undraw_project_completed_re_jr7u.svg" class="company__stats--img" alt="">
-                    <span class="stats-text">multiple projects</span>
-                </div>
-                <div class="company--stats_column">
-                    <img src="assets/undraw_reviews_lp8w.svg" class="company__stats--img" alt="">
-                    <span class="stats-text">several clients</span>
-                </div>
-                <div class="company--stats_column">
-                    <img src="assets/undraw_certification_re_ifll.svg" class="company__stats--img certs_img" alt="">
-                    <span class="stats-text">certifications verified</span>
-                </div>
-            </div>
-        </section>
+    <div id="heading">
+      <img src="assets/FullLogo_Transparent.png" alt="" class="logo_img head_logo-img">
+      <h1>Cybersecurity Services for Organizations</h1>
+      <p class="heading-para">Helping Secure Environments and Giving Clients The Ability To Byte Back Digitally</p>
+    </div>
 
-        <section id="about">
-            <div class="about row">
-                <div class="about__img--container">
-                    <img src="assets/undraw_about_us_page_re_2jfm.svg" 
-                   class="about__img" alt="">
-                </div>
-                <div class="about__column-content">
-                    <h2 class="about-heading">About Us</h2>
-                    <p class="about-para">Koomson Inc is a small disadvantaged woman owned (WOSB) and black owned business, with the certification that offers unparalleled cybersecurity expertise, agility, and a personalized touch. Our team's dedication to innovation ensures cutting-edge solutions tailored to your specific needs, providing a quick response to emerging threats. With a focus on personalized service, we forge close relationships with our clients, offering a great amount of attention and collaboration.</p>
-                </div>
-            </div>
-        </section>
+  </header>
+  <main>
 
-
-        <section id="past-performances">
-            <div class="pp row">
-                <div class="pp__heading-container">
-                    <h2 class="pp__heading">Learning & Growth Milestones</h2>
-                </div>
-                <div class="pp__content-container">
-                    <div class="pp__img-container uT">
-                        <img src="assets/8665828_school_education_icon.png" alt="" class="pp__img">
-                        <span class="pp-text">University of Tampa</span>
-                    </div>
-                    <div class="pp__img-container pNC">
-                        <img src="assets/290147_bank_cash_finance_money_payment_icon.png" class="pp__img">
-                        <span class="pp-text">PNC Bank</span>
-                    </div>
-                    <div class="pp__img-container tIAA">
-                        <img src="assets/1530085_building_business_city_commercial_company_icon.png" class="pp__img">
-                        <span class="pp-text">TIAA</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="vision">
-            <div class="vision row">
-                <div class="vision__content-container">
-                    <h2 class="vision-heading">Our Vision</h2>
-                    <p class="vision-para">Our vision is to help create a cyber-resilient future where individuals and organizations can thrive in a secure digital environment.
-                    </p>
-                </div>
-                <div class="vision__img-container">
-                    <img src="assets/undraw_visionary_technology_re_jfp7.svg" class="vision-img" alt="">
-                </div>
-            </div>
-        </section>
-
-
-        <section id="mission">
-            <div class="mission row">
-                <div class="mission__img-container">
-                    <img src="assets/undraw_goals_re_lu76.svg" alt="" class="mission-img">
-                </div>
-                <div class="mission__content-container">
-                    <h2 class="mission-heading">Our Mission</h2>
-                    <p class="mission-para">Our mission is to shield the digital landscape by providing innovative and robust cybersecurity solutions while offering a curated selection of top-tier software solutions. We are dedicated to the empowerment of navigating the digital realm with confidence, ensuring the confidentiality, integrity, and availability of valuable data and assets.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="core-comp">
-            <h2 class="cc-heading">Core Competencies</h2>
-            <div class="cc row">
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <p class="cc-list-para">Security Operations (Tier 1 and Tier 2 support)</p>
-                </div>
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-network-wired"></i>
-                    <p class="cc-list-para">SIEM</p>
-                </div>
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-cloud"></i>
-                    <p class="cc-list-para">Cloud Security</p>
-                </div>
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-triangle-exclamation"></i>
-                    <p class="cc-list-para">Threat Hunting</p>
-                </div>
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-computer"></i>
-                    <p class="cc-list-para">Penetration Testing</p>
-                </div>
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-users-gear"></i>
-                    <p class="cc-list-para">SOC Assessments</p>
-                </div>
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-bug"></i>
-                    <p class="cc-list-para">Cybersecurity Engineering</p>
-                </div>
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-unlock"></i>
-                    <p class="cc-list-para">Vulnerability Assessments</p>
-                </div>
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <p class="cc-list-para">Data Analytics</p>
-                </div>
-                <div class="cc--list-container">
-                    <i class="fa-solid fa-users-between-lines"></i>
-                    <p class="cc-list-para">Authorized Reselling of Software Products</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="contact row">
-                <div class="contact-row-top">
-                    <h2 class="contact-heading">Contact Us</h2>
-                <a href="contact.html">
-                    <button class="contact-btn">Send An Email</button>
-                </a>
-                </div>
-                <div class="contact-row-bottom">
-                    <div class="contact__icon-container">
-                        <div class="contact_icon-circle email">
-                            <i class="fa-regular fa-envelope"></i>
-                        </div>
-                        <p class="contact-para">Nstephens@koomson.co</p>
-                    </div>
-                    <div class="contact__icon-container">
-                        <div class="contact_icon-circle phone">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <p class="contact-para">+1(813)323-1954</p>
-                    </div>
-                    <div class="contact__icon-container">
-                        <div class="contact_icon-circle address">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <p class="contact-para">Jacksonville, Florida</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <footer id="footer">
-        <div class="footer row">
-            <div class="footer__top-row">
-                <div class="footer__logo-container">
-                    <a href="#">
-                        <img src="assets/FullLogo_Transparent.png" alt="logo_img" class="footer__logo-img">
-                    </a>
-                </div>
-                <ul class="footer-list">
-                    <li class="footer-list-item">
-                        <a href="#about" class="footer__link-anchor">About Us</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#vision" class="footer__link-anchor">Our Vision</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#mission" class="footer__link-anchor">Our Mission</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#core-comp" class="footer__link-anchor">Core Competencies</a>
-                    </li>
-                </ul>
-                <div class="other__company-info one">
-                    <p class="company-info--text">UEI: HZRDR5FLCMW5</p>
-                    <p class="company-info--text">CAGE CODE: 9RXR8</p>
-                </div>
-                <div class="other__company-info two>
-                    <p class="company-info--text">DUNS:119181235</p>
-                    <p class="company-info--text">NAICS: 541519, 513210, 518210, 541512, 541513, 541511</p>
-                </div>
-            </div>
-            <div class="footer__bottom-row">
-                <p>© 2024 Koomson Inc. All Rights Reserved.</p>
-            </div>
-            <div class="web__dev-signature">
-                <a href="https://ddwithkayc.com/" target="_blank" class="dev-signature">
-                    <span class="footer-signature">Created By DDWithKayc</span>
-                </a>
-            </div>
+    <section id="company-stats">
+      <div class="company--stats row">
+        <div class="company--stats_column">
+          <img src="assets/undraw_experts_re_i40h.svg" class="company__stats--img" alt="">
+          <span class="stats-text">years of experience</span>
         </div>
-    </footer>
+        <div class="company--stats_column">
+          <img src="assets/undraw_project_completed_re_jr7u.svg" class="company__stats--img" alt="">
+          <span class="stats-text">multiple projects</span>
+        </div>
+        <div class="company--stats_column">
+          <img src="assets/undraw_reviews_lp8w.svg" class="company__stats--img" alt="">
+          <span class="stats-text">several clients</span>
+        </div>
+        <div class="company--stats_column">
+          <img src="assets/undraw_certification_re_ifll.svg" class="company__stats--img certs_img" alt="">
+          <span class="stats-text">certifications verified</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about row">
+        <div class="about__img--container">
+          <img src="assets/undraw_about_us_page_re_2jfm.svg" class="about__img" alt="">
+        </div>
+        <div class="about__column-content">
+          <h2 class="about-heading">About Us</h2>
+          <p class="about-para">Koomson Inc is a small disadvantaged woman owned (WOSB) and black owned business, with
+            the certification that offers unparalleled cybersecurity expertise, agility, and a personalized touch. Our
+            team's dedication to innovation ensures cutting-edge solutions tailored to your specific needs, providing a
+            quick response to emerging threats. With a focus on personalized service, we forge close relationships with
+            our clients, offering a great amount of attention and collaboration.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="past-performances">
+      <div class="pp row">
+        <div class="pp__heading-container">
+          <h2 class="pp__heading">Learning & Growth Milestones</h2>
+        </div>
+        <div class="pp__content-container">
+          <div class="pp__img-container uT">
+            <img src="assets/8665828_school_education_icon.png" alt="" class="pp__img">
+            <span class="pp-text">University of Tampa</span>
+          </div>
+          <div class="pp__img-container pNC">
+            <img src="assets/290147_bank_cash_finance_money_payment_icon.png" class="pp__img">
+            <span class="pp-text">PNC Bank</span>
+          </div>
+          <div class="pp__img-container tIAA">
+            <img src="assets/1530085_building_business_city_commercial_company_icon.png" class="pp__img">
+            <span class="pp-text">TIAA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="vision">
+      <div class="vision row">
+        <div class="vision__content-container">
+          <h2 class="vision-heading">Our Vision</h2>
+          <p class="vision-para">Our vision is to help create a cyber-resilient future where individuals and
+            organizations can thrive in a secure digital environment.
+          </p>
+        </div>
+        <div class="vision__img-container">
+          <img src="assets/undraw_visionary_technology_re_jfp7.svg" class="vision-img" alt="">
+        </div>
+      </div>
+    </section>
+
+
+    <section id="mission">
+      <div class="mission row">
+        <div class="mission__img-container">
+          <img src="assets/undraw_goals_re_lu76.svg" alt="" class="mission-img">
+        </div>
+        <div class="mission__content-container">
+          <h2 class="mission-heading">Our Mission</h2>
+          <p class="mission-para">Our mission is to shield the digital landscape by providing innovative and robust
+            cybersecurity solutions while offering a curated selection of top-tier software solutions. We are dedicated
+            to the empowerment of navigating the digital realm with confidence, ensuring the confidentiality, integrity,
+            and availability of valuable data and assets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="core-comp">
+      <h2 class="cc-heading">Core Competencies</h2>
+      <div class="cc row">
+        <div class="cc--list-container">
+          <i class="fa-solid fa-shield-halved"></i>
+          <p class="cc-list-para">Security Operations (Tier 1 and Tier 2 support)</p>
+        </div>
+        <div class="cc--list-container">
+          <i class="fa-solid fa-network-wired"></i>
+          <p class="cc-list-para">SIEM</p>
+        </div>
+        <div class="cc--list-container">
+          <i class="fa-solid fa-cloud"></i>
+          <p class="cc-list-para">Cloud Security</p>
+        </div>
+        <div class="cc--list-container">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p class="cc-list-para">Threat Hunting</p>
+        </div>
+        <div class="cc--list-container">
+          <i class="fa-solid fa-computer"></i>
+          <p class="cc-list-para">Penetration Testing</p>
+        </div>
+        <div class="cc--list-container">
+          <i class="fa-solid fa-users-gear"></i>
+          <p class="cc-list-para">SOC Assessments</p>
+        </div>
+        <div class="cc--list-container">
+          <i class="fa-solid fa-bug"></i>
+          <p class="cc-list-para">Cybersecurity Engineering</p>
+        </div>
+        <div class="cc--list-container">
+          <i class="fa-solid fa-unlock"></i>
+          <p class="cc-list-para">Vulnerability Assessments</p>
+        </div>
+        <div class="cc--list-container">
+          <i class="fa-solid fa-chart-simple"></i>
+          <p class="cc-list-para">Data Analytics</p>
+        </div>
+        <div class="cc--list-container">
+          <i class="fa-solid fa-users-between-lines"></i>
+          <p class="cc-list-para">Authorized Reselling of Software Products</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact row">
+        <div class="contact-row-top">
+          <h2 class="contact-heading">Contact Us</h2>
+          <a href="contact.html">
+            <button class="contact-btn click">Send An Email</button>
+          </a>
+        </div>
+        <div class="contact-row-bottom">
+          <div class="contact__icon-container">
+            <div class="contact_icon-circle email">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <p class="contact-para">Nstephens@koomson.co</p>
+          </div>
+          <div class="contact__icon-container">
+            <div class="contact_icon-circle phone">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <p class="contact-para">+1(813)323-1954</p>
+          </div>
+          <div class="contact__icon-container">
+            <div class="contact_icon-circle address">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p class="contact-para">Jacksonville, Florida</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer id="footer">
+    <div class="footer row">
+      <div class="footer__top-row">
+        <div class="footer__logo-container">
+          <a href="#">
+            <img src="assets/FullLogo_Transparent.png" alt="logo_img" class="footer__logo-img">
+          </a>
+        </div>
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a href="#about" class="footer__link-anchor">About Us</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#vision" class="footer__link-anchor">Our Vision</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#mission" class="footer__link-anchor">Our Mission</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#core-comp" class="footer__link-anchor">Core Competencies</a>
+          </li>
+        </ul>
+        <div class="other__company-info one">
+          <p class="company-info--text">UEI: HZRDR5FLCMW5</p>
+          <p class="company-info--text">CAGE CODE: 9RXR8</p>
+        </div>
+        <div class="other__company-info two>
+                    <p class="company-info--text">DUNS #:119181235</p>
+          <p class="company-info--text">NAICS: 541519, 513210, 518210,
+            <br>
+            541512, 541513, 541511
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom-row">
+        <p>© 2024 Koomson Inc. All Rights Reserved.</p>
+      </div>
+      <div class="web__dev-signature">
+        <a href="https://ddwithkayc.com/" target="_blank" class="dev-signature">
+          <span class="footer-signature">Created By DDWithKayC</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
