@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="contact.css">
   <script src="https://kit.fontawesome.com/0b5ae10d2b.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "aXlVnZVZjkjMTnpmw",
+      })
+    })
+  </script>
 </head>
 
 <body>
@@ -90,6 +97,7 @@
         <p class="heading-para">Fill Out Form Below To Send Us A Quick Message</p>
     </div>
 
+
 </header>
 
   <main>
@@ -98,35 +106,37 @@
       <div class="contact__row">
         <div class="contact__column contact__column--left">
           <p class="key"><span class="green">"*"</span> indicates required fields</p>
+          
           <form id="contact__form" onsubmit="contact(event)">
-            <div class="firstAndLastNameInputs">
-              <div class="form__item">
-                <label class="form__item--label fName--label">First Name</label>
-                <input class="input text fName" name="user_name" type="text" placeholder="*Your First Name" required></input>
-              </div>
-              <div class="form__item">
-                <label class="form__item--label lName--label">Last Name</label>
-                <input class="input text lName" name="user_name" type="text" placeholder="*Your Last Name" required></input>
-              </div>
+            <div class="form__item">
+              <label class="form__item--label fName--label">Full Name</label>
+              <input class="input" name="user_name" type="text" placeholder="*Your Full Name" required></input>
             </div>
-            
             <div class="form__item">
               <label class="form__item--label">Company Name</label>
-              <input class="input text compName" name="user_name" type="text" placeholder="Your Company Name"></input>
+              <input class="input" name="user_name" type="text" placeholder="Your Company Name"></input>
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input class="input  text email" name="user_email" type="email" placeholder="*Your E-mail" required></input>
+              <input class="input" name="user_email" type="email" placeholder="*Your E-mail" required></input>
             </div>
             <div class="form__item">
               <label class="form__item--label">Message</label>
-              <textarea class="input textarea message" name="message" type="text" placeholder="*Questions or comments? " required></textarea>
+              <textarea class="input" name="message" type="text" placeholder="*Questions or comments? " required></textarea>
             </div>
             <button id="contact__submit" class="form__submit">
-            Submit Message
+            Send Message To Us!
             </button>
           </form>
+
+          <div class="temp__overlay temp__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="temp__overlay temp__overlay--success">
+            Thanks for the message! We will be in touch shortly!
+          </div>
         </div>
+
           <div class="contact__column contact__column--right">
             <div class="icon-content--container location__content">
               <figure class="icon__container">
@@ -143,7 +153,7 @@
               </figure>
               <div class="content__text--container">
                 <h3>Phone Number</h3>
-                <p class="contact__para">904-xxx-xxxx</p>
+                <p class="contact__para">813-323-1954</p>
               </div>
             </div>
             <div class="icon-content--container other-company-info__content">
@@ -164,6 +174,8 @@
           </div>
       </div>
     </section>
+
+
     <footer id="footer">
       <div class="footer row">
         <div class="footer__top-row">
@@ -208,6 +220,7 @@
         </div>
       </div>
     </footer>
+
   </main>
 </body>
 
