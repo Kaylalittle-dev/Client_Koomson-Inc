@@ -72,17 +72,18 @@ input, textarea {
 
 .textarea {
   resize: vertical;
-  height: 400px;
+  height: 100px;
   margin-top: 8px;
-}
-
-input::placeholder, textarea::placeholder {
-  padding: 20px;
-  font-size: 14px;
 }
 
 label {
   display: none;
+}
+
+
+input::placeholder, textarea::placeholder {
+  padding: 20px;
+  font-size: 14px;
 }
 
 .textarea::placeholder {

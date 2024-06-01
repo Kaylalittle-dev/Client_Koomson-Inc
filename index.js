@@ -2,7 +2,6 @@ function openMenu() {
     document.body.classList += ' menu--open'
 }
 
-
 function closeMenu() {
     document.body.classList.remove('menu--open')
 }
@@ -13,7 +12,7 @@ function contact(event) {
   const success = document.querySelector(".temp__overlay--success");
   loading.classList += " temp__overlay--visible";
   emailjs
-    .sendForm(
+  .sendForm(
       "service_sqmgemo",
       "templateza8mc78",
       event.target,
