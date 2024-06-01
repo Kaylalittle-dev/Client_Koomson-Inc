@@ -15,7 +15,7 @@ function contact(event) {
   emailjs
     .sendForm(
       "service_sqmgemo",
-      "template_d9refyl",
+      "templateza8mc78",
       event.target,
       "aXlVnZVZjkjMTnpmw"
     )
